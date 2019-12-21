@@ -1,6 +1,6 @@
 FROM kongtrio/kongtrio_centos
 
-MAINTAINER yangk
+LABEL maintainer="yangkun116/presto"
 
 ADD presto-server-0.226.tar.gz /root
 
