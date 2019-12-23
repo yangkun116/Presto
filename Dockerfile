@@ -2,7 +2,7 @@ FROM kongtrio/kongtrio_centos
 
 LABEL maintainer="yangkun116/presto"
 
-COPY opt.sh /opt.sh
+COPY opt.sh /
 
 RUN sh ./opt.sh 
 
