@@ -6,13 +6,9 @@ RUN wget https://repo1.maven.org/maven2/com/facebook/presto/presto-server/0.226/
 
 RUN tar -zxvf presto-server-0.226.tar.gz
 
-RUN mv presto-server-0.226 presto
+RUN sh ./opt.sh 
 
-COPY /etc /presto
-
-RUN mkdir /var/presto
-
-RUN mkdir /var/presto/data
+COPY /etc /presto/etc
 
 CMD /bin/bash
 
